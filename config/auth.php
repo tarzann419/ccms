@@ -44,6 +44,14 @@ return [
             'driver' => 'session',
             'provider' => 'admins',
         ],
+        'inec' => [
+            'driver' => 'session',
+            'provider' => 'inecs',
+        ],
+        'frsc' => [
+            'driver' => 'session',
+            'provider' => 'frscs',
+        ],
     ],
 
     /*
@@ -71,6 +79,14 @@ return [
         'admins' => [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class,
+        ],
+        'inecs' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Inec::class,
+        ],
+        'frscs' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\FRSC::class,
         ],
 
         // 'users' => [

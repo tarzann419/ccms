@@ -46,11 +46,19 @@ class InecController extends Controller
         $result = CitizenDetails::where('nin', $nin)->exists();
 
         if ($result){
-            return "FOUND";
+            return redirect()->route('show.record', ['nin' => $nin]);
         }  else{
             return "NOT FOUND";
         }
     }
+
+    public function show_record($nin)
+    {
+        $record = CitizenDetails::where('nin', $nin)->firstOrFail();
+
+        return view('inec.continue_reg', compact('record'));
+    }
+
     public function register_voter()
     {
         return view('inec.register_voter');

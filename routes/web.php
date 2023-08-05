@@ -60,6 +60,11 @@ Route::prefix('inec')->group(function (){
     Route::post('/search_nin', [\App\Http\Controllers\InecController::class, 'search_nin'])
         ->name('search.nin');
 
+    Route::get('/show_record/{nin}', [\App\Http\Controllers\InecController::class, 'show_record'])
+        ->name('show.record')
+        ->middleware('inec');
+
+
 
 
 //    Route::get('/all/inec', [\App\Http\Controllers\InecController::class, 'all_inec'])

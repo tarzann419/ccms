@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class CitizenDetails extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
+
+    protected $primaryKey = 'nin';
 }

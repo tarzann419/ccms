@@ -67,12 +67,14 @@ class CitizenDetailsFactory extends Factory
             'phone_number' => $phoneNumber,
             'address' => $faker->streetAddress,
             'state_of_origin' => $state,
-            'pvc_id' => $faker->numberBetween(1000000000, 9999999999),
+//            'pvc_id' => $faker->numberBetween(1000000000, 9999999999),
+            'pvc_id' => '',
             'int_passport_no' => $combinedValue,
             'driver_license_id' => $faker->numberBetween(1000000000, 9999999999),
             'driver_license_id_exp' => $faker->date(),
             'int_passport_no_exp' => $faker->date(),
-            'pvc_id_exp' => $faker->date(),
+            'pvc_id_exp' => '',
+//            'pvc_id_exp' => $faker->date(),
         ];
     }
 }

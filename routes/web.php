@@ -60,10 +60,6 @@ Route::prefix('inec')->group(function (){
     Route::post('/search_nin', [\App\Http\Controllers\InecController::class, 'search_nin'])
         ->name('search.nin');
 
-    Route::get('/show_record/{nin}', [\App\Http\Controllers\InecController::class, 'show_record'])
-        ->name('show.record')
-        ->middleware('inec');
-
 
 
 
@@ -73,6 +69,10 @@ Route::prefix('inec')->group(function (){
 });
 
 
+// This is here becuase if i put two slashes, it messes the whole page up and returns without the page design
+Route::get('/show_record/{nin}', [\App\Http\Controllers\InecController::class, 'show_record'])
+    ->name('show.record')
+    ->middleware('inec');
 
 
 Route::get('/', function () {

@@ -147,8 +147,11 @@ Project should be available to you locally at `http://127.0.0.1:8000`
 
 
 A demo of this project is live at: `https://shorturl.at/dwxHO`
-Default INEC login email: inec@admin.com
-Default INEC login password: password
+[https://shorturl.at/dwxHO](https://shorturl.at/dwxHO)
+
+
+* Default INEC login email: `inec@admin.com`
+* Default INEC login password: `password`
 
 
 

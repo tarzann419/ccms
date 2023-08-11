@@ -60,7 +60,7 @@
                     <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
                     <a href="{{ route('inec.login.form') }}" class="btn btn-success text-light rounded-pill py-2 px-4 ms-3">INEC Sign-In</a>
                     
-                    <a href="" class="btn btn-danger text-light rounded-pill py-2 px-4 ms-3">FRSC Sign-In</a>
+                    <a href="{{ route('coming.soon') }}" class="btn btn-danger text-light rounded-pill py-2 px-4 ms-3">FRSC Sign-In</a>
                 </div>
             </nav>
 

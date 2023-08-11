@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -86,6 +87,7 @@ Route::get('/show_record/{nin}', [\App\Http\Controllers\InecController::class, '
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/comingsoon', [PageController::class, 'ComingSoon'])->name('coming.soon');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

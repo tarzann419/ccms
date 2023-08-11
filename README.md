@@ -1,16 +1,5 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -45,7 +34,10 @@
 
 
 
-The Unified Citizen Management System (UCMS) is an innovative and integrated platform that streamlines citizen information and services across various parastatals, including the Federal Road Safety Corps (FRSC), National Identity Management Commission (NIMC), and Independent National Electoral Commission (INEC). This system enhances efficiency and accessibility by enabling citizens and authorized agents to perform registration, view information, and make adjustments to citizen details using a unique identifier known as the National Identity Number (NIN).
+The Unified Citizen Management System (UCMS) is an innovative and integrated platform that streamlines citizen information and services across various parastatals, including the Federal Road Safety Corps (FRSC), National Identity Management Commission (NIMC), and Independent National Electoral Commission (INEC). 
+
+
+This system enhances efficiency and accessibility by enabling citizens and authorized agents to perform registration, view information, and make adjustments to citizen details using a unique identifier known as the National Identity Number (NIN).
 
 Here's why:
 * `Unmatched Convenience`: UCMS consolidates services from various government parastatals into a single platform, enabling citizens and agents to efficiently manage registrations, updates, and inquiries.

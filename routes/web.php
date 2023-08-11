@@ -61,7 +61,7 @@ Route::prefix('inec')->group(function (){
         ->name('search.nin');
 
     Route::get('/logout', [\App\Http\Controllers\InecController::class, 'logout'])
-        ->name('logout');
+        ->name('inec.logout');
 
 //
 //    Route::post('/generate_pvc', [\App\Http\Controllers\InecController::class, 'storeGenerated'])

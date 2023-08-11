@@ -9,9 +9,13 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
     },
     "require-dev": {
+        "fzaninotto/faker": "~1.4",
         "fakerphp/faker": "^1.23",
         "laravel/breeze": "^1.19",
         "laravel/pint": "^1.0",

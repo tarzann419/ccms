@@ -146,6 +146,10 @@ Project should be available to you locally at `http://127.0.0.1:8000`
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+A demo of this project is live at: `https://shorturl.at/dwxHO`
+Default INEC login email: inec@admin.com
+Default INEC login password: password
+
 
 
 <!-- CONTRIBUTING -->

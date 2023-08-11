@@ -71,7 +71,7 @@
                             <h1 class="text-white mb-4 animated zoomIn">All in one Unified Citizen Management System for easy handling of citizen details.</h1>
                             <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
                             <a href="{{ route('inec.login.form') }}" class="btn btn-success py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">INEC Log-In</a>
-                            <a href="{{ route('coming.soon') }}" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">FRSC Log-In</a>
+                            <a href="{{ route('coming.soon') }}" class="btn btn-outline-danger py-sm-3 px-sm-5 rounded-pill animated slideInRight">FRSC Log-In</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid" src="{{ asset('seoassets/img/hero.png') }}" alt="">

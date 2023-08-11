@@ -10,6 +10,6 @@ class CitizenDetails extends Model
     use HasFactory;
 
     protected $guarded = [];
-
-    protected $primaryKey = 'nin';
+//
+//    protected $primaryKey = 'nin';
 }

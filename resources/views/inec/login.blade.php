@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>FRSC Login </title>
+    <title>INEC Login </title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('frsc/vendors/feather/feather.css') }}">
     <link rel="stylesheet" href="{{ asset('frsc/vendors/mdi/css/materialdesignicons.min.css') }}">
@@ -19,7 +19,7 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ asset('frsc/css/vertical-layout-light/style.css') }}">
     <!-- endinject -->
-    <link rel="shortcut icon" href="{{ asset('frsc/images/favicon.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('logos/inec_logo.png') }}" />
 </head>
 
 <body>
@@ -37,14 +37,22 @@
                         <form class="pt-3" method="post" action="{{ route('inec.login') }}">
                             @csrf
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                                <input type="email" name="email" class="@error('emailUsername') is-invalid @enderror form-control form-control-lg" id="emailUsername" placeholder="Username">
+                                @error('emailUsername')
+                                <div class="alert alert-danger">{{ ＄message }}</div>
+                                @enderror
                             </div>
                             <div class="form-group">
-                                <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                                <input type="password" name="password" class="@error('pass') is-invalid @enderror form-control form-control-lg" id="pass" placeholder="Password">
+                                @error('pass')
+                                <div class="alert alert-danger">{{ ＄message }}</div>
+                                @enderror
                             </div>
-                            {{--                            <div class="mt-3">--}}
-                            {{--                                <a type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" >SIGN IN</a>--}}
-                            {{--                            </div>--}}
+
+                            @error('title')
+                            <div class="alert alert-danger">{{ ＄message }}</div>
+                            @enderror
+
                             <button type="submit">submit</button>
                             <div class="my-2 d-flex justify-content-between align-items-center">
                                 <div class="form-check">

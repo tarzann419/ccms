@@ -15,8 +15,13 @@
                         <small class="text-muted float-end">VOTER PERSONAL DETAILS</small>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form method="post" action="{{ route('generate.pvc', ['nin' => $nin]) }}">
                             @csrf
+                            @if(session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">First Name</label>
                                 <div class="col-sm-10">
@@ -63,10 +68,21 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">has voters card</label>
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">VOTER'S ID</label>
                                 <div class="col-sm-10">
                                     <div class="input-group input-group-merge">
-                                        <p>{{ $record->pvc_id ? "HAS A VOTERS CARD" : "DOESNT HAVE A VOTERS CARD"}}</p>
+                                        <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-user"></i></span>
+                                        <input type="text" class="form-control" id="basic-icon-default-fullname" value="{{ $record->pvc_id ? $record->pvc_id : "NOT REGISTERED" }}" aria-label="John Doe" aria-describedby="basic-icon-default-fullname2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">VOTER'S ID EXPIRY DATE</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                                        <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-user"></i></span>
+                                        <input type="text" class="form-control" id="basic-icon-default-fullname" value="{{ $record->pvc_id_exp ? $record->pvc_id_exp : "NOT REGISTERED" }}" aria-label="John Doe" aria-describedby="basic-icon-default-fullname2">
                                     </div>
                                 </div>
                             </div>

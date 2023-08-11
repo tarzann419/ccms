@@ -60,20 +60,28 @@ Route::prefix('inec')->group(function (){
     Route::post('/search_nin', [\App\Http\Controllers\InecController::class, 'search_nin'])
         ->name('search.nin');
 
+    Route::get('/logout', [\App\Http\Controllers\InecController::class, 'logout'])
+        ->name('logout');
+
+//
+//    Route::post('/generate_pvc', [\App\Http\Controllers\InecController::class, 'storeGenerated'])
+//        ->name('generate.pvc');
+
+    Route::post('/generate_pvc/{nin}', [\App\Http\Controllers\InecController::class, 'generatePvcId'])
+        ->name('generate.pvc');
 
 
 
-//    Route::get('/all/inec', [\App\Http\Controllers\InecController::class, 'all_inec'])
-//        ->name('all.inec')
-//        ->middleware('inec');
+
+
 });
 
-
-// This is here becuase if i put two slashes, it messes the whole page up and returns without the page design
+//CUSTOM
+// This is here becuase if I put two slashes, it messes the whole page up and returns without the page design
 Route::get('/show_record/{nin}', [\App\Http\Controllers\InecController::class, 'show_record'])
     ->name('show.record')
     ->middleware('inec');
-
+//END OF CUSTOM
 
 Route::get('/', function () {
     return view('welcome');

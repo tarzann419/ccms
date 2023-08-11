@@ -32,7 +32,7 @@
                                 <td>{{ $item->date_of_birth }}</td>
                                 <td>{{ $item->height }}</td>
                                 <td>
-                                    <span class="badge {{ $item->pvc_id ? 'bg-label-primary' : 'bg-label-danger' }} me-1">
+                                    <span class="badge {{ $item->pvc_id ? 'bg-label-success' : 'bg-label-danger' }} me-1">
                                             {{ $item->pvc_id ? 'REGISTERED' : 'NOT REGISTERED' }}
                                         </span>
                                 </td>

@@ -45,7 +45,7 @@ class InecController extends Controller
 
     public function dashboard()
     {
-        return view('inec.dashboard');
+        return view('inec.inec_dashboard');
     }
 
 

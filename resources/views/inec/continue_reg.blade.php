@@ -89,7 +89,7 @@
 
                             <div class="row justify-content-end">
                                 <div class="col-sm-10">
-                                    <button {{ $record->pvc_id ? 'disabled' : '' }} type="submit" class="btn btn-primary">GENERATE VOTERS ID</button>
+                                    <button {{ $record->pvc_id ? 'disabled' : '' }} type="submit" class=" btn {{ $record->pvc_id ? 'btn-success' : 'btn-primary'}}">{{ $record->pvc_id ? 'ALREADY ACTIVE' : 'GENERATE VOTERS ID'}}</button>
                                 </div>
                             </div>
                         </form>

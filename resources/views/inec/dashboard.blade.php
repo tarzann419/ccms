@@ -61,7 +61,7 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
             <div class="app-brand demo">
-                <a href="index.html" class="app-brand-link">
+                <a href="{{ route('dashboard.inec') }}" class="app-brand-link">
               <span class="app-brand-logo demo">
                   <img src="{{ asset('logos/inec_logo.png') }}" alt="" height="45">
 
@@ -77,7 +77,7 @@
 
             <ul class="menu-inner py-1">
                 <!-- Dashboard -->
-                <li class="menu-item active">
+                <li class="menu-item {{ Request::is('inec/dashboard') ? 'active bg-success' : '' }}">
                     <a href="{{ route('dashboard.inec') }}" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-home-circle"></i>
                         <div data-i18n="Analytics">Dashboard</div>
@@ -86,7 +86,7 @@
 
 
 
-                <li class="menu-item">
+                <li class="menu-item {{ Request::is('inec/all_inec') ? 'active bg-success' : '' }}">
                     <a href="{{ route('all.inec') }}" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-crown"></i>
                         <div data-i18n="Boxicons">All Voters</div>
@@ -94,7 +94,7 @@
                 </li>
 
 
-                <li class="menu-item">
+                <li class="menu-item {{ Request::is('inec/register_voter') ? 'active bg-success' : '' }}">
                     <a href="{{ route('register.voter') }}" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-crown"></i>
                         <div data-i18n="Boxicons"> Register Voters</div>
@@ -136,18 +136,7 @@
                     <!-- /Search -->
 
                     <ul class="navbar-nav flex-row align-items-center ms-auto">
-                        <!-- Place this tag where you want the button to render. -->
-                        <li class="nav-item lh-1 me-3">
-                            <a
-                                class="github-button"
-                                href="https://github.com/themeselection/sneat-html-admin-template-free"
-                                data-icon="octicon-star"
-                                data-size="large"
-                                data-show-count="true"
-                                aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-                            >INEC ADMIN</a
-                            >
-                        </li>
+                        
 
                         <!-- User -->
                         <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -177,10 +166,10 @@
                                 </li>
 
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="https://github.com/tarzann419/ccms">
                         <span class="d-flex align-items-center align-middle">
                           <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Billing</span>
+                          <span class="flex-grow-1 align-middle">Collaborate</span>
                         </span>
                                     </a>
                                 </li>
@@ -216,12 +205,11 @@
                             ©
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script>
-                            , made with ❤️ by
+                            </script>. made by
                             <a href="http://github.com/tarzann419" target="_blank" class="footer-link fw-bolder">MrDan Tech</a>
                         </div>
                         <div>
-                            <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                            <a href="http://github.com/tarzann419" class="footer-link me-4" target="_blank">Work with me</a>
 
                             <a
                                 href="http://github.com/tarzann419"

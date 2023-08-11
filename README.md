@@ -94,28 +94,28 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone or download the repo from [https://github.com/tarzann419/ccms](https://github.com/tarzann419/ccms)
 2. Clone the repo
-   ```sh
-   git clone https://github.com/tarzann419/ccms.git
-   ```
+    ```sh
+    git clone https://github.com/tarzann419/ccms.git
+    ```
 3. Open the project in your terminal and install composer
-```sh
-composer install
-```
+    ```sh
+    composer install
+    ```
 Make sure this is in the root of the folder 'ccms'!
 4.  Install NPM packages
-   ```sh
-   npm install
-   ```
+    ```sh
+    npm install
+    ```
 5.  Run NPM packages
-   ```sh
-   npm run dev
-   ```
+    ```sh
+    npm run dev
+    ```
 6. In the root of your project directory, make a copy of `.env.example`
     ```sh
-   cp .env.example .env
-   ```
+    cp .env.example .env
+    ```
 7. Customize the `.env` with your database name and features. Should look something like this:
- ```js
+ ```php
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
@@ -124,22 +124,21 @@ Make sure this is in the root of the folder 'ccms'!
     DB_PASSWORD=root
    ```
 8. Generate a new key for your project
-     ```sh
-   php artisan key:generate
-   ```
+    ```sh
+    php artisan key:generate
+    ```
 9. Migrate all tables to the database
-```sh
-   php artisan migrate
-   ```
+    ```sh
+    php artisan migrate
+    ```
 10. Seed all the "dummy" data that we've extracted
-```sh
-   php artisan db:seed
-   ```
+    ```sh
+    php artisan db:seed
+    ```
 11. Finally, run the project!
-```sh
-   php artisan serve
-   ```
-Project should
+    ```sh
+    php artisan serve
+    ```
 
 
 
@@ -199,7 +198,6 @@ Project Link: [https://github.com/tarzann419/ccms](https://github.com/tarzann419
 ## Acknowledgments
 
 
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

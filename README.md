@@ -93,7 +93,8 @@ This is an example of how to list things you need to use the software and how to
     ```sh
     composer install
     ```
-Make sure this is in the root of the folder 'ccms'!
+    * Make sure this is in the root of the folder 'ccms'!
+      
 4.  Install NPM packages
     ```sh
     npm install

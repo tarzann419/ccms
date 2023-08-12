@@ -69,8 +69,8 @@ Here's why:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To clone and get a local copy up and running follow these simple example steps.
+
+To access this project locally, you will have to clone and get a copy. To get it up and running, follow these simple example steps.
 
 ### Prerequisites
 
